@@ -1,13 +1,13 @@
 import java.util.Arrays;
 
-public class Dog extends Pet{
+public final class Dog extends Pet{
 
     private String name;
     private String breed;
     private String[] commands;
 
     public Dog(){
-        System.out.println("Name: Hus\n" + "Breed: Siberian Husky\n" + "Commands: Фас!");
+        System.out.println("Age: " + super.getAge() +"\nShelter name: Mir\nShelter address: Lenina 1\n" + "Name: Hus\n" + "Breed: Siberian Husky\n" +"Commands: Фас!");
     }
 
     public Dog(String name, String breed, String[] commands,
@@ -59,8 +59,8 @@ public class Dog extends Pet{
         System.out.println(voice);
     }
 
-    public void makeVoice(String voice, int number) {
-        System.out.println(voice + " " + number);
+    public void makeVoice(String voice, String voice2) {
+        System.out.println(voice + " " + voice2);
     }
 
     public String getInfo() {

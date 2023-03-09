@@ -9,7 +9,7 @@ public class Main {
 
         dog.makeVoice();
         dog.makeVoice("Гув Гув");
-        dog.makeVoice("Гив Гив",3);
+        dog.makeVoice("Гив Гив", "Гив Гив");
         System.out.println();
 
         Dog dog2 = new Dog();
