@@ -19,10 +19,6 @@ public class Main {
         System.out.println(dog3.getInfo());
         System.out.println();
 
-        SmithFamily bob = new SmithFamily("Professional chess player","golf");
-        Grandfather grandfather = new Grandfather();
-        System.out.println("Name: " + grandfather.getName() + ", age: " + grandfather.getAge() + ", character: " + grandfather.getCharacter() +
-               ", profession: " + bob.getProfession() + ", hobby: " + bob.getHobby() + Generation.GENERATION_BABY_BOOMERS + "\n");
 
         SmithFamily tom = new SmithFamily("Java Developer","chess");
         Father father = new Father("Tom", 40, "kind", tom, Generation.GENERATION_MILLENNIALS );

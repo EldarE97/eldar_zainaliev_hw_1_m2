@@ -6,6 +6,7 @@ public final class Son extends Father{
         this.profession2 = profession2;
     }
 
+    @Override
     public String info() {
         return super.info() + "serious hobby: " + profession2 + "\n";
     }
