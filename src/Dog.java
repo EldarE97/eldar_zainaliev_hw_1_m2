@@ -63,7 +63,7 @@ public final class Dog extends Pet{
         System.out.println(voice + " " + voice2);
     }
 
-    public String getInfo() {
+    public final String getInfo() {
         return super.getInfo() +
                 "\nName: " + this.name +
                 "\nBreed: " + breed +
