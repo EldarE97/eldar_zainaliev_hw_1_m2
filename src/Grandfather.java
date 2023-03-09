@@ -3,13 +3,7 @@ public class Grandfather {
     private int age = 70;
     private String character = "wise";
     private SmithFamily smithFamily;
-
-    /*public Grandfather(String bob, int i, String wise, SmithFamily bob1) {
-        this.name = name;
-        this.age = age;
-        this.character = character;
-    }*/
-
+    private Generation generation;
 
     public String getName() {
         return name;
@@ -25,5 +19,17 @@ public class Grandfather {
 
     public SmithFamily getSmithFamily() {
         return smithFamily;
+    }
+
+    public void setSmithFamily(SmithFamily smithFamily) {
+        this.smithFamily = smithFamily;
+    }
+
+    public Generation getGeneration() {
+        return generation;
+    }
+
+    public void setGeneration(Generation generation) {
+        this.generation = generation;
     }
 }

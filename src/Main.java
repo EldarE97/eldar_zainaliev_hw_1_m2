@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
         String[] commands = {"Сидеть", "Лежать"};
@@ -21,22 +19,23 @@ public class Main {
         System.out.println(dog3.getInfo());
         System.out.println();
 
-
         SmithFamily bob = new SmithFamily("Professional chess player","golf");
-        SmithFamily tom = new SmithFamily("Java Developer","chess");
-        SmithFamily will = new SmithFamily("schoolboy","chess");
-
         Grandfather grandfather = new Grandfather();
-        System.out.println("Name: " + grandfather.getName() + ", age: " + grandfather.getAge() + ", character: " + grandfather.getCharacter() + "\n");
+        System.out.println("Name: " + grandfather.getName() + ", age: " + grandfather.getAge() + ", character: " + grandfather.getCharacter() +
+               ", profession: " + bob.getProfession() + ", hobby: " + bob.getHobby() + Generation.GENERATION_BABY_BOOMERS + "\n");
 
-        Father father = new Father("Tom", 40, "kind", tom);
-        father.info();
+        SmithFamily tom = new SmithFamily("Java Developer","chess");
+        Father father = new Father("Tom", 40, "kind", tom, Generation.GENERATION_MILLENNIALS );
+        System.out.println(father.info());
         father.info("");
         father.info(10);
-        System.out.println();
 
-        Son son = new Son("Will", 10,"honest", will);
-        son.info();
-        son.info("");
+        SmithFamily will = new SmithFamily("schoolboy","chess");
+        Son son = new Son("Will", 10,"honest", will, Generation.GENERATION_ALPHA, "beginner Java programmer");
+        System.out.println(son.info());
+
+        SmithFamily ben = new SmithFamily("schoolboy","hockey");
+        Son son2 = new Son("Ben", 9,"vigorous", ben, Generation.GENERATION_ALPHA, "beginner C++ programmer");
+        System.out.println(son2.info());
     }
 }
